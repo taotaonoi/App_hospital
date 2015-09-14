@@ -1,3 +1,14 @@
+ @font-face {
+    font-family: 'supermarketregular';
+    src: url('supermarket-webfont.eot');
+    src: url('supermarket-webfont.eot?#iefix') format('embedded-opentype'),
+         url('supermarket-webfont.woff') format('woff'),
+         url('supermarket-webfont.ttf') format('truetype'),
+         url('supermarket-webfont.svg#supermarketregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
  #logo {
 	background: transparent url('../img/3.jpg');
 	background-size : 100% 100%;
@@ -172,13 +183,15 @@
 }
 
 #match1 {
-	background: transparent url('../img/time_game_start-bg.jpg');
-	background-size : 100% 100%;
-	min-height: 100%;
-	font-family: supermarket;	
+	background: url("../img/time_game_start-bg.jpg") no-repeat center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+	font-family: supermarketregular;	
 }
 
-#match2 {
+#gm2 {
 	background: transparent url('../img/bg-win.png');
 	background-size : 100% 100%;
 	min-height: 100%;
@@ -289,11 +302,12 @@ img {
  }
  
  .gender {
-	width: 17%;
+	width: 15%;
+	margin-top: 1%;
 }
 
 .group {
-	width: 9%; 	
+	width: 7%; 	
 }
 
 
@@ -318,21 +332,19 @@ img {
 	height: 40px;
 }
 
-.grouppic
+/*.grouppic
 {	
 	position: absolute;
 	top: 0;
 	right: 0;
 	width: 5%
-}
+}*/
 
 
 .logouttext{
-	position: absolute;
-	top: -40px;
-	right: 55px;
-	font-family: supermarket;
-	font-size: 200%;
+	margin-top: 16%;
+	font-size: 150%;
+	font-family: supermarketregular;
 }
 
 .dc {
@@ -343,7 +355,7 @@ img {
 
 .orange {
 	z-index: -1;
-	width: 78%;
+	width: 100%;
 	margin-top:6%;
 	margin-left:auto;
 	margin-right:auto;
@@ -373,12 +385,12 @@ img {
 
 .scaledown {
 	margin-bottom: 2%;
-	width: 6%;	
+	width: 5%;	
 }
 
 .scaleup {
 	margin-bottom: 2%;
-	width: 6%;	
+	width: 5%;	
 }
 
 .pickid {
@@ -445,7 +457,8 @@ img {
 
 .in  {
 	margin-top: 2%;
-	margin-left: 1%;
+	margin-left: 2%;
+	margin-right: 1%;
 	width: 15%;
 	height: auto;
 }
@@ -453,18 +466,20 @@ img {
 .save {
 	margin-top: 2%;
 	margin-left: 1%;
-	width: 15%;
+	width: 20%;
 	height: auto;
 }
 
 .edit {
 	margin-top: 2%;
+	margin-left: 2%;
 	width: 15%;
 	height: auto;
 }
 
 .cancel {
 	margin-top: 2%;
+	margin-right: 2%;
 	width: 15%;
 	height: auto;
 }
@@ -474,7 +489,7 @@ img {
 	position: absolute;
 	right: 0;
 	bottom: 0;
-	width: 15%;
+	width: 25%;
 	height: auto;
 }
 
@@ -499,8 +514,8 @@ img {
 }
 
 .yearup img, .yeardown img, .monthup img, .monthdown img{
-	width: 8%;
-	margin-top: -3%;
+	width: 7%;
+	margin-top: 2.5%;
 }
 
 .ui-radio .ui-radio-on span.ui-btn-inner{
@@ -523,14 +538,8 @@ html, body { margin: 0; padding: 0; }
 	margin-top: 2%;
 }
 
-@font-face {
-    font-family: supermarket;
-	src: url(supermarket.ttf);
-}
-
 .mainhead {
-	width: 55%;
-	margin: 4% 25% 6%;
+	width: 65%;
 }
 
 .mainbutton{
@@ -542,8 +551,14 @@ html, body { margin: 0; padding: 0; }
 
 .mainbutton img {
 	display: block;
-	width: 35%;
+	width: 75%;
 	margin-top: 1%;
+}
+
+.mainbutton2 img{
+	display: block;
+	width: 195%;
+	margin-top: 10%; 
 }
 
 
@@ -895,9 +910,11 @@ html, body { margin: 0; padding: 0; }
 }
 
 .head2 .kidhead {
-	margin-top: 5%;
+	margin-top: 3%;
 	margin-bottom: 7%;
 	margin-left: 2%;
+	font-family: supermarket;
+	font-size: 20%;
 }
 
 .head3{
@@ -973,6 +990,7 @@ html, body { margin: 0; padding: 0; }
 
 .kidhead {
 	margin: 0;
+	font-size: 100%;
 }
 
 .kidnohead {
@@ -989,13 +1007,13 @@ html, body { margin: 0; padding: 0; }
 /* bird*/
 .age-month {
 	width: 10%;
-	margin-top: -3%;
+	margin-top: 2%;
 	margin-right: 1%;
 }
 
 .age-year {
-	width: 10%;
-	margin-top: -3%;
+	width: 8%;
+	margin-top: 2%;
 	margin-right: 1%;
 }
 
@@ -1014,7 +1032,7 @@ html, body { margin: 0; padding: 0; }
 }
 
 .m1 img{
-	width: 25%;
+	width: 45%;
 	margin: 1%;
 }
 
@@ -1030,7 +1048,7 @@ html, body { margin: 0; padding: 0; }
 }
 
 .m3{
-	position: absolute;
+	top: 80%;
 	right:15%;
 	bottom:9%;
 	width: 20%;
@@ -1064,7 +1082,13 @@ html, body { margin: 0; padding: 0; }
 	position: absolute;
 	right: 10%;
 	top: 20%;
-	width: 80%;
+	z-index: 10;
+}
+.popuppic3 img {
+	position: absolute;
+	right: 10%;
+	top: 20%;
+	width: 25%;
 	z-index: 10;
 }
 
@@ -1168,21 +1192,17 @@ html, body { margin: 0; padding: 0; }
 	font-size: 150%;	
 }
 
-#logo div{
-	float: left;
-	width: 50%;
-	text-align: center;
-	margin-top: -2.5%;
-}
+
 
 #logotu
  {
-	width:50%;
+	width: 55%;
 }
 
 #logohos
 {
-	width:60%;
+	width: 55%;
+	height: auto;
 }
 
 .highlight {
@@ -1194,7 +1214,7 @@ html, body { margin: 0; padding: 0; }
 	margin-top: -10%;
 }
 
-.sound {
+#sound {
 	width: 5%;
 	float: right;
 	margin-right: 6%;
@@ -1353,6 +1373,7 @@ text-align:center;
 	text-align: center;
 }
 
+
 #disablingDiv
 {
     /* Do not display it on entry */
@@ -1374,4 +1395,71 @@ text-align:center;
     background-color: white; 
     opacity:.00; 
     filter: alpha(opacity=00); 
+}
+
+.transperent{
+	background-color: rgba(255,204,153,0.7);
+	border-radius: 10px;
+	padding: 5px;
+	font-size: 300%;
+	font-family: supermarketregular;
+}
+.pic2  img
+{
+	width:30%;
+	height:auto;
+	margin-bottom: 1%;
+}
+
+.fontLoginPage{
+	font-size: 300%;
+	font-family: supermarketregular;
+}
+
+.pMenu{
+	font-size: 400%;
+	font-family: supermarketregular;
+}
+.guest{
+	margin-top: 16%;
+	font-size: 200%;
+	font-family: supermarketregular;
+}
+.m1{
+	margin-top: 27%;
+	margin-right: 10%;
+	
+}
+.bgGame{
+	background-color: #FACC2E;
+	opacity: 0.80;
+	border-radius: 1em;
+	box-shadow: black 0.4em 0.4em 0.3em;
+
+
+}
+.headGame{
+	font-size: 500%;
+	font-family: supermarketregular;
+}
+#match2 {
+	background: transparent url('../img/bg-win.png');
+	background-size : 100% 100%;
+	min-height: 100%;
+	font-family: supermarket;	
+}
+#match{
+	background: url("../img/3.jpg") no-repeat center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+	font-family: supermarketregular;
+}
+.headVideo{
+	font-size: 400%;
+	font-family: supermarketregular;
+}
+.p{
+	font-family: supermarketregular;
 }
